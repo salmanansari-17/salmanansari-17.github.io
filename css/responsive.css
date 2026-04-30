@@ -1,0 +1,333 @@
+@media screen and (min-width: 992px) {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 18px 50px;
+    }
+
+    .header .nav {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    #menu {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 2rem;
+        position: static;
+        width: auto;
+        height: auto;
+        background: transparent;
+        opacity: 1;
+        visibility: visible;
+        overflow: visible;
+        transition: none;
+        top: auto;
+        left: auto;
+        padding: 0;
+    }
+
+    #menu .main-nav {
+        position: static;
+        top: auto;
+        transform: none;
+        flex: 1;
+    }
+
+    #menu .main-nav ul {
+        display: flex;
+        gap: 1.5rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    #menu .main-nav ul li {
+        text-align: center;
+        padding-inline: 0;
+    }
+
+    #menu .main-nav a {
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 0;
+    }
+
+    .header-cta {
+        display: inline-block;
+        border: 1px solid #ff005c;
+        color: #ff005c;
+        padding: 10px 30px;
+        border-radius: 50px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 600;
+        transition: background-color 0.2s ease, color 0.2s ease;
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+
+    .header-cta:hover {
+        background: #ff005c;
+        color: #fff;
+    }
+
+    #menu .menu-footer {
+        display: none;
+    }
+
+    .burger_menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    a.header-cta {
+        display: none;
+    }
+
+    .banner_section h1 {
+        font-size: 64px;
+    }
+
+    .banner_section {
+        min-height: unset;
+        padding-block: 150px 80px;
+    }
+
+    .about-summary {
+        margin-bottom: 20px;
+    }
+
+    .education_experience h2 {
+        font-size: 32px;
+    }
+
+    .skills_section h2 {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+
+    .skill_box p {
+        font-size: 12px;
+    }
+
+    .skill_box {
+        padding: 18px 12px;
+    }
+
+    .skill_box .skill_icon_box i {
+        font-size: 34px !important;
+    }
+
+    .projects_section,
+    .contact_section,
+    .education_experience,
+    .about_section {
+        padding: 80px 0;
+    }
+
+    .projects_section h2 {
+        font-size: 40px;
+    }
+
+    .project-content {
+        padding: 20px 12px;
+    }
+
+    .contact_section h2 {
+        font-size: 40px;
+    }
+
+    .hero {
+        position: fixed;
+    }
+
+    #menu .menu-footer ul {
+        margin-right: auto;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .header .site_logo img {
+    max-width: 180px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .project-thumb {
+        min-height: 160px;
+    }
+
+    .banner_section h1 {
+        font-size: 8.5vw;
+    }
+
+    .download-btn {
+        padding: 12px 30px;
+        font-size: 3.5vw;
+        font-weight: 500;
+    }
+
+    .banner_section h6 {
+        font-size: 16px;
+    }
+
+    .about_txt h6 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .about_txt h2 {
+        font-size: 7vw;
+    }
+
+    .about-summary {
+        margin-bottom: 20px;
+        padding: 16px;
+        border-radius: 10px;
+    }
+
+    .about_txt p {
+        font-size: 15px;
+        line-height: 1.5em;
+        font-weight: 300;
+    }
+
+    .about-card {
+        border-radius: 10px;
+        padding: 16px;
+    }
+
+    .about-card p {
+        line-height: 1.5;
+        font-size: 15px;
+    }
+
+    .about-card h6 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .about-card span {
+        font-size: 22px;
+    }
+
+    .education_experience h2 {
+        font-size: 7vw;
+    }
+
+    .edu-div,
+    .exp-div {
+        border-radius: 10px;
+        padding: 16px;
+        margin-bottom: 12px;
+    }
+
+    .edu-div h6,
+    .exp-div h6 {
+        font-size: 20px;
+    }
+
+    .skills_section h2,
+    .projects_section h2,
+    .contact_section h2 {
+        font-size: 8vw;
+        margin-bottom: 30px;
+    }
+
+    .skill_box {
+        padding: 14px 10px;
+        border-radius: 10px;
+    }
+
+    .project-content h6 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .project-content p {
+        font-size: 15px;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    .project-btn {
+        font-size: 14px;
+    }
+
+    .contact_section h2 {
+        margin-bottom: 10px;
+    }
+
+    .contact-form-wrapper {
+        padding: 16px;
+    }
+
+    .contact-form-wrapper h5 {
+        font-size: 20px;
+        margin-bottom: 22px;
+    }
+
+    .contact-details .contact-item {
+        gap: 16px;
+        padding: 16px;
+        border-radius: 10px;
+    }
+
+    .contact-details .contact-item i {
+        font-size: 22px;
+    }
+
+    #menu .main-nav ul li {
+        text-align: left;
+        padding-inline: 10px;
+    }
+
+    #menu .main-nav a {
+        font-size: 8vw;
+    }
+
+    #menu .menu-footer ul li {
+        display: block;
+        margin: 12px 0rem 0 0rem;
+        text-align: left;
+    }
+
+    #menu .menu-footer a {
+        font-size: 14px;
+    }
+
+    #menu .menu-footer {
+        padding: 2rem 20px;
+    }
+
+    .btn-send {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .availability-badge {
+        font-size: 14px;
+    }
+
+    .header {
+        padding: 8px 15px;
+    }
+
+    #menu .menu-footer ul {
+        margin-right: auto;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+    .header .site_logo img {
+    max-width: 140px;
+    }
+}
