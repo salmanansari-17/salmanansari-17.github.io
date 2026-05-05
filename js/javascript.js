@@ -25,10 +25,10 @@ $(document).ready(function(){
             }
         });
     }
-    
+
     // Mobile smooth scroll
     if ($(window).width() <= 992) {
-        $('.nav-links a, .menu a').on('click', function(e){
+        $('.nav-link').on('click', function(e){
             e.preventDefault();
             var target = $(this).attr('href');
             $('html, body').animate({
