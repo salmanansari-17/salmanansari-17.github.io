@@ -62,14 +62,16 @@ $(document).on('click', '.nav-link', function(e){
     }
 });
 
-
-// About Summary Read More
-// $(document).ready(function(){
-//     $(".summery-read").click(function(){
-//         $(".summery-read").hide();
-//         $(".sum-txt").show();
-//     });
-// });
+// Scroll Event Handler for Adding Class
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 40) {
+      $(".header").addClass("active");
+    } else {
+      $(".header").removeClass("active");
+    }
+  });
+});
 
 // Contact Form Handler
 $(document).ready(function(){

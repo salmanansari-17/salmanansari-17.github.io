@@ -146,8 +146,11 @@ button:focus {
     top: 0;
     width: 100%;
     z-index: 99;
+    transition: 0.25s ease-in-out;
 }
-
+.header.active {
+    background-color: rgb(23 4 26 / 90%);
+}
 .header .nav {
     align-items: center;
     justify-content: space-between;
