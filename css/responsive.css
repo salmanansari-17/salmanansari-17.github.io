@@ -1,87 +1,116 @@
-@media screen and (max-width:1366px) {
+@media screen and (max-width:1440px) {
     .banner_section h1 {
-    font-size: 70px;
+        font-size: 70px;
     }
+
     .download-btn {
-    margin-top: 16px;
-    padding: 13px 30px;
-    font-size: 16px;
+        margin-top: 16px;
+        padding: 13px 30px;
+        font-size: 16px;
     }
+
     .about_section,
     .education_experience,
     .projects_section,
     .contact_section,
     .skills_section {
-    padding: 20px 0;
+        padding: 20px 0;
     }
+
     .about-card {
-    border-radius: 15px;
-    padding: 15px;
+        border-radius: 15px;
+        padding: 15px;
     }
+
     .about-summary {
-    padding: 15px;
-    border-radius: 15px;
+        padding: 15px;
+        border-radius: 15px;
     }
+
     .about_txt h2 {
-    font-size: 34px;
-    margin-bottom: 20px;
+        font-size: 34px;
+        margin-bottom: 20px;
     }
+
     .about_txt h6 {
-    font-size: 16px;
-    margin-bottom: 16px;
+        font-size: 16px;
+        margin-bottom: 16px;
     }
+
     .about_txt p {
-    font-size: 16px;
+        font-size: 16px;
     }
+
     .about-card h6 {
-    font-size: 20px;
+        font-size: 20px;
     }
-    .education_experience .container .row .col-12.col-lg-6 {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 20px;
-    }
-    .education_experience .container .row .col-12.col-lg-6 .edu-div, 
-    .education_experience .container .row .col-12.col-lg-6 .exp-div {
-    flex: 1;
-    }
+
     .education_experience h2 {
-    width: 100%;
-    font-size: 28px;
+        width: 100%;
+        font-size: 28px;
     }
+
     .skill_box {
-    padding: 14px;
+        padding: 14px;
     }
+
     .skill_box .skill_icon_box i {
-    font-size: 34px !important;
-    }   
+        font-size: 34px !important;
+    }
+
     .skills_section h2 {
-    font-size: 40px;
-    margin-bottom: 36px;
+        font-size: 40px;
+        margin-bottom: 36px;
     }
+
     .projects_section h2 {
-    font-size: 40px;
-    margin-bottom: 30px;
+        font-size: 40px;
+        margin-bottom: 30px;
     }
+
     .project-content {
-    padding: 18px;
+        padding: 18px;
     }
+
     .project-content h6 {
-    font-size: 18px;
+        font-size: 18px;
     }
+
     .project-content p {
-    font-size: 15px;
-    line-height: 1.5em;
+        font-size: 15px;
+        line-height: 1.5em;
     }
+
     .contact_section h2 {
-    font-size: 40px;
+        font-size: 40px;
     }
+
     .contact-form-wrapper {
-    padding: 18px;
+        padding: 18px;
     }
+
     .contact-details .contact-item {
-    padding: 18px 16px;
+        padding: 18px 16px;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width: 1440px) {
+    .education_experience .container .row .col-12.col-lg-6 {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 20px;
+    }
+
+    .education_experience .container .row .col-12.col-lg-6 .edu-div,
+    .education_experience .container .row .col-12.col-lg-6 .exp-div {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .header .site_logo img {
+        max-width: 170px;
     }
 }
 
@@ -242,8 +271,9 @@
         align-items: center;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+
     .header .site_logo img {
-    max-width: 180px;
+        max-width: 180px;
     }
 }
 
@@ -414,7 +444,8 @@
         align-items: center;
         grid-template-columns: 1fr 1fr;
     }
+
     .header .site_logo img {
-    max-width: 140px;
+        max-width: 140px;
     }
 }
