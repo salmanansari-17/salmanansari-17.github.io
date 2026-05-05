@@ -4,27 +4,29 @@ $('.burger_menu').click(function(){
     $('#menu').toggleClass('open');
 });
 
+
 // Initialize Full Page JS
 $(document).ready(function(){
-    if ($(window).width() > 992) {
-        new fullpage('#fullpage', {
-            sectionsColor: ['transparent'],
-            navigationTooltips: ['Home', 'About', 'Experience & Education', 'Skills', 'Projects', 'Contact'],
-            navigation: true,
-            slidesNavigation: true,
-            licenseKey: 'YOUR LICENSE KEY HERE',
-            onLeave: function(origin, destination, direction){
-                window.fullpage_api = this;
-            },
-            afterLoad: function(origin, destination, direction){
-                window.fullpage_api = this;
-            },
-            afterRender: function(){
-                window.fullpage_api = this;
-            }
-        });
-    }
+    new fullpage('#fullpage', {
+        sectionsColor: ['transparent'],
+        navigationTooltips: ['Home', 'About', 'Experience & Education', 'Skills', 'Projects', 'Contact'],
+        navigation: true,
+        slidesNavigation: true,
+        responsiveWidth: 992,
+        scrollOverflow: true,
+        licenseKey: 'YOUR LICENSE KEY HERE',
+        onLeave: function(origin, destination, direction){
+            window.fullpage_api = this;
+        },
+        afterLoad: function(origin, destination, direction){
+            window.fullpage_api = this;
+        },
+        afterRender: function(){
+            window.fullpage_api = this;
+        }
+    });
 });
+
 
 // Navigation Link Click Handler
 $(document).on('click', '.nav-link', function(e){
