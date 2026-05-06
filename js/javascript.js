@@ -103,23 +103,7 @@ $(document).ready(function(){
         // Disable button during submission
         $button.prop('disabled', true).text('Sending...');
         
-        // Send email via EmailJS
-        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
-            name: name,
-            email: email,
-            message: message
-        }, 'YOUR_PUBLIC_KEY')
-        .then(function(response){
-            // Success
-            alert('Message sent successfully! I\'ll get back to you soon.');
-            $('#contactForm')[0].reset();
-            $button.prop('disabled', false).text(originalText);
-        })
-        .catch(function(error){
-            // Error
-            console.log('EmailJS error:', error);
-            alert('Sorry, there was an error sending your message. Please try again later.');
-            $button.prop('disabled', false).text(originalText);
-        });
+        // Submit the form through Formsubmit.co
+        $('#contactForm')[0].submit();
     });
 });
