@@ -103,28 +103,22 @@ $(document).ready(function(){
         // Disable button during submission
         $button.prop('disabled', true).text('Sending...');
         
-        // Send email via formspree or emailjs (using formspree for simplicity)
-        $.ajax({
-            method: 'POST',
-            url: 'https://formspree.io/salman0007795@gmail.com',
-            data: {
-                name: name,
-                email: email,
-                message: message
-            },
-            dataType: 'json'
-        })
-        .done(function(response){
+        // Send email via EmailJS
+        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
+            name: name,
+            email: email,
+            message: message
+        }, 'YOUR_PUBLIC_KEY')
+        .then(function(response){
             // Success
             alert('Message sent successfully! I\'ll get back to you soon.');
             $('#contactForm')[0].reset();
             $button.prop('disabled', false).text(originalText);
         })
-        .fail(function(error){
-            // If formspree fails, still show success locally (graceful degradation)
-            console.log('Note: Form submission passed local validation.');
-            alert('Thank you for your message! I\'ll get back to you soon.');
-            $('#contactForm')[0].reset();
+        .catch(function(error){
+            // Error
+            console.log('EmailJS error:', error);
+            alert('Sorry, there was an error sending your message. Please try again later.');
             $button.prop('disabled', false).text(originalText);
         });
     });
