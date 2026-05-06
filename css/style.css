@@ -626,7 +626,10 @@ button:focus {
     background-position: center;
     flex: 0 0 auto;
 }
-
+.project-thumb img {
+    width: 100%;
+    height: auto;
+}
 .project-natural {
     background: linear-gradient(135deg, #3f1a31 0%, #85163c 100%);
 }
@@ -703,7 +706,9 @@ button:focus {
     transform: translateY(-1px);
     border-color: #ff005c;
 }
-
+.projects_section .container {
+    max-width: 1810px;
+}
 
 /* Projects Section Css End */
 
