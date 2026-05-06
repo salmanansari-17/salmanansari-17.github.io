@@ -103,7 +103,8 @@ $(document).ready(function(){
         // Disable button during submission
         $button.prop('disabled', true).text('Sending...');
         
-        // Submit the form through Formsubmit.co
+        // Show confirmation and submit the form through Formsubmit.co
+        alert('Thank you! Your message has been submitted successfully. I\'ll get back to you as soon as possible.');
         $('#contactForm')[0].submit();
     });
 });
