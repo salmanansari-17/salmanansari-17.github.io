@@ -621,7 +621,7 @@ button:focus {
 }
 
 .project-thumb {
-    min-height: 180px;
+    min-height: 220px;
     background-size: cover;
     background-position: center;
     flex: 0 0 auto;
