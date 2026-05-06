@@ -106,7 +106,7 @@ $(document).ready(function(){
         // Send email via formspree or emailjs (using formspree for simplicity)
         $.ajax({
             method: 'POST',
-            url: 'https://formspree.io/f/mbjqenke', // Replace with your formspree form ID
+            url: 'https://formspree.io/salman0007795@gmail.com',
             data: {
                 name: name,
                 email: email,
