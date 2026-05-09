@@ -467,12 +467,12 @@ button:focus {
 /* Download CV Button */
 .download-btn {
     display: inline-block;
-    margin-top: 30px;
-    padding: 15px 30px;
+    margin-top: 26px;
+    padding: 14px 25px;
     background: transparent;
     color: #ff005c;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -596,7 +596,8 @@ button:focus {
     /* background: rgba(255, 255, 255, 0.01); */
 }
 
-.projects_section h2 {
+.projects_section h2,
+.projects_page h2 {
     font-size: 50px;
     font-weight: 700;
     text-align: center;
@@ -706,8 +707,12 @@ button:focus {
     transform: translateY(-1px);
     border-color: #ff005c;
 }
-.projects_section .container {
+/* .projects_section .container {
     max-width: 1810px;
+} */
+
+.projects_page {
+    padding: 100px 0;
 }
 
 /* Projects Section Css End */
