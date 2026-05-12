@@ -63,7 +63,8 @@
         margin-bottom: 36px;
     }
 
-    .projects_section h2 {
+    .projects_section h2,
+    .projects_page h2 {
         font-size: 40px;
         margin-bottom: 30px;
     }
@@ -249,7 +250,8 @@
         padding: 80px 0;
     }
 
-    .projects_section h2 {
+    .projects_section h2,
+    .projects_page h2 {
         font-size: 40px;
     }
 
@@ -354,7 +356,8 @@
 
     .skills_section h2,
     .projects_section h2,
-    .contact_section h2 {
+    .contact_section h2,
+    .projects_page h2 {
         font-size: 8vw;
         margin-bottom: 30px;
     }

@@ -62,16 +62,7 @@ $(document).on('click', '.nav-link', function(e){
     }
 });
 
-// Scroll Event Handler for Adding Class
-$(document).ready(function() {
-  $(window).scroll(function() {
-    if ($(document).scrollTop() > 40) {
-      $(".header").addClass("active");
-    } else {
-      $(".header").removeClass("active");
-    }
-  });
-});
+
 
 // Contact Form Handler
 $(document).ready(function(){
@@ -107,4 +98,16 @@ $(document).ready(function(){
         alert('Thank you! Your message has been submitted successfully. I\'ll get back to you as soon as possible.');
         $('#contactForm')[0].submit();
     });
+});
+
+
+// Scroll Event Handler for Adding Class
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 40) {
+      $(".header").addClass("active");
+    } else {
+      $(".header").removeClass("active");
+    }
+  });
 });
